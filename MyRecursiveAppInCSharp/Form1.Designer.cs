@@ -29,36 +29,45 @@
         private void InitializeComponent()
         {
             this.btn_send = new System.Windows.Forms.Button();
-            this.txt_result = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_send
             // 
-            this.btn_send.Location = new System.Drawing.Point(152, 172);
+            this.btn_send.Location = new System.Drawing.Point(87, 135);
             this.btn_send.Name = "btn_send";
             this.btn_send.Size = new System.Drawing.Size(133, 67);
             this.btn_send.TabIndex = 0;
             this.btn_send.Text = "Calculer";
             this.btn_send.UseVisualStyleBackColor = true;
             // 
-            // txt_result
+            // lblResult
             // 
-            this.txt_result.Location = new System.Drawing.Point(152, 315);
-            this.txt_result.Name = "txt_result";
-            this.txt_result.Size = new System.Drawing.Size(100, 20);
-            this.txt_result.TabIndex = 1;
-            this.txt_result.Text = "cd";
-            this.txt_result.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(87, 250);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(46, 13);
+            this.lblResult.TabIndex = 1;
+            this.lblResult.Text = "Resultat";
+            // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(87, 82);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(133, 20);
+            this.txtInput.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 450);
-            this.Controls.Add(this.txt_result);
+            this.ClientSize = new System.Drawing.Size(320, 339);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btn_send);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Factorielle";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -68,7 +77,8 @@
         #endregion
 
         private System.Windows.Forms.Button btn_send;
-        private System.Windows.Forms.TextBox txt_result;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.TextBox txtInput;
     }
 }
 
